@@ -168,7 +168,7 @@ function game() {
       //set a setmove randomly
       for (i=0; i<li; i++) {
          setmove[i] = move[Math.floor(Math.random() * move.length)];
-         $contul.append('<li class="' + i + ' null fl jusc alc' + '"><i class="fa fa-arrow-' + setmove[i] + '"></i></li>');
+         $contul.append('<li class="' + i + ' null fl jusc alc' + '">'+setmove[i]+'</li>');
          $cont.removeClass('out');
          $cont.addClass('in on');
          space = true; //activate space key
